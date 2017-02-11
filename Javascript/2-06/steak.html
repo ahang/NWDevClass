@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+<!-- 1. Create a website (from scratch) that asks users if they eat steak.
+2. If they respond with "yes", write the following to the page: “Here’s a Steak Sandwich!”
+3. If they respond with "no", write the following to the page: “Here’s a Tofu Stir-Fry!”
+Bonus: Ask what the user’s birth year is. If they are under 21, alert the following: “No Sake for you!”
+Hint: You will need to use document.write() from a few slides back.
+ -->
+	<script>
+		var eatSteak = confirm("Do you eat steak?");
+
+		if (eatSteak) {
+			document.write("Here's a Steak Sandwich!");
+		} else {
+			// document.write("Here's a Tofu Stir-Fry!");
+			var ageOver = prompt("How old are you?")
+				if (ageOver > 21) {
+					document.write("Here's a Tofu Stir-Fry and have some sake!");
+				} else {
+					document.write("Here's a Tofu Stir-Fry and no Sake for you!");
+				}
+		}
+
+	</script>
+
+</body>
+</html>

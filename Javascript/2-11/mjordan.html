@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>M. Jordan</title>
+</head>
+<body>
+	<script>
+		// var mJordan = ["fullName", "college", "proTeam", "titleCount", "teamOwnership"];
+		// var mJordanInfo = ["Micheal Jordan", "UNC", "Chicago Bulls", 6, "Carolina Bobcats"];
+
+		// var index = mJordan.indexOf("proTeam");
+
+		// console.log(mJordanInfo[index]);
+		//{} = setting an empty JS object
+		var mJordan = {
+			"fullName": "Micheal Jordan",
+			"college" : "UNC",
+			"proTeam" : "Chicago Bulls",
+			"titleCount" : 6,
+			"bestYears" : [1994, 1996, 1999],
+			favoriteQuote : function() {
+				console.log("Larry Bird Sucks");
+			}
+		};
+		mJordan.();
+
+		console.log(mJordan["titleCount"]);
+		//Using dot notation wont work on values that have spaces between them
+		console.log(mJordan.titleCount);
+		console.log(mJordan.bestYears[0]);
+	</script>
+
+</body>
+</html>

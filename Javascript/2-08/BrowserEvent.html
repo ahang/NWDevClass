@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<div id="headline">
+	</div>
+
+	<script>
+
+	// document.write("something to the screen!");
+	//Create new Variable = assign find elementbyid called headline
+	var myElement = document.getElementById("headline");
+
+	document.onkeyup = function(e) {
+		myElement.textContent = e.key;
+
+	};
+	</script>
+
+</body>
+</html>
