@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Basic JS Dump</title>
+	<style>
+		.cool {
+			background-color: blue;
+			color: white;
+		}
+	</style>
+</head>
+<body>
+	<!--Created an empty HTML div-->
+	<div id="something"></div>
+
+	<script>
+		var somethingDiv = document.getElementById("something");
+
+		somethingDiv.innerHTML = "Hello, team";
+		//creating a new div element
+		var newDiv = document.createElement("div");
+		console.log(newDiv);
+		//appending the newDiv to the somethingDiv
+		somethingDiv.appendChild(newDiv);
+		//setting a class to the newDiv
+		newDiv.innerHTML = "THis is a newDiv";
+		newDiv.setAttribute("class", "cool");
+	</script>
+
+</body>
+</html>

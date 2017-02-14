@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>JavaScript Content!</title>
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+</head>
+<body>
+  <div id="something">Something</div>
+
+  <script>
+    //to load jquery and to run ever once the document is ready to be loaded
+    //to ensure that the listener is ready to be implemented on the div or else the listener could load and not properly function 
+    //because the div didnt load yet
+    $(document).ready(function() {
+
+
+      var somethingDiv = $("#something");
+      //Waiting to be clicked listener
+      somethingDiv.on("click", function() {
+        console.log("Clicked!");
+      });
+    });
+  </script>
+
+</body>
+</html>
