@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Scope Example 2</title>
+</head>
+<body>
+	<script>
+		console.log(this); //Function or Method on the window
+
+		function myFunction() {
+			console.log(this);
+		}
+
+		myFunction(); //this is referring to the window
+
+		myObject = {
+			name: "The Name of the Object",
+			renderName: function () {
+				console.log(this.name);
+			}
+		}
+
+		myObject.renderName(); // referring to the name of the myObject
+	</script>
+
+</body>
+</html>

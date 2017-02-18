@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Scope Example</title>
+</head>
+<body>
+	<script>
+	//When you dont assign var, it is assigned to the window
+	var tvShow = "House";
+
+	function watchTVShow() {
+		tvShow = "Lost";
+	}
+	watchTVShow();
+////////////////////////////////////////////////////////////
+	var tvShow = "House";
+
+	function watchTvShow() {
+		var movieName = "Moneyball";
+
+		return movieName
+	}
+	//Will return undefined because its isnt returned
+	var tvShowName = watchTvShow();
+	console.log(tvShowName);
+	console.log(watchTvShow());
+//////////////////////////////////////////////////////////////////
+	//Important to declare var once for each variable
+	//If you dont want a variable to bleed out to the global window then always use a variable within the function
+	tvShow = "House";
+
+	function watchTvShow() {
+		var tvShow = "House: The Return";
+	}
+
+	function watchAnotherShow() {
+		var tvShow = "House: Part 3";
+	}
+
+
+	watchTVShow();
+	watchAnotherShow();
+
+	console.log(tvShow);
+	</script>
+
+</body>
+</html>
